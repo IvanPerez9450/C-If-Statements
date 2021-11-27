@@ -1,0 +1,82 @@
+namespace FirstProject
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("If Statements");
+
+            /* if Statements --------------------------------------------------
+
+            bool isMale = false;
+            if (isMale)
+            {
+                Console.WriteLine("You are male");
+            } else
+            {
+                Console.WriteLine("You are not male");
+            }---------------------------------------------------------------  */
+
+
+
+            /* & Operator (&)---------------------------------------------------
+
+            bool isMale = true;
+            bool isTall = true;
+
+            if (isMale && isTall);
+            {
+                Console.WriteLine("You are a tall male");
+            }else
+            {
+                Console.WriteLine("You are not a tall male");
+            }
+            ----------------------------------------------------------------- */
+
+            /* Or Operator (||)----------------------------------------------
+
+            bool isShort = true;
+            bool isFemale = true;
+
+            if (isShort || isFemale)
+            {
+                Console.WriteLine("You are a short person or a female");
+            }else
+            {
+                Console.WriteLine("you are male or tall");
+            }-----------------------------------------------------------------*/
+
+
+            /* If else (!) ----------------------------------------------------
+            bool isMale = true;
+            bool isTall = true;
+
+            if (isMale && isTall)
+            {
+                Console.WriteLine("You are a Tall Man");
+            } else if (isMale && !isTall)
+            {
+                Console.WriteLine("You are a short Male");
+            }else
+            {
+                Console.WriteLine("You are not eigther a short or tall male");
+            }----------------------------------------------------------------*/
+
+            Console.WriteLine(GetMax(2, 10));
+
+        }
+        static int GetMax( int num1, int num2)
+        {
+            int result;
+
+            if (num1 > num2)
+            {
+                result = num2;
+            }
+            else
+            {
+                result = num1;
+            }
+            return result;
+        }
+    
